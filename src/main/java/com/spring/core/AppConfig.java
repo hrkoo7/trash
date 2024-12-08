@@ -14,12 +14,9 @@ public class AppConfig {
     public Vehicle bike(){
         return new Bike();
     }
-    @Bean
-    public Vehicle hathi(){
-        return new Hathi();
-    }
+
     @Bean
     public Passenger passenger(){
-        return new Passenger(hathi());
+        return new Passenger(car());
     }
 }

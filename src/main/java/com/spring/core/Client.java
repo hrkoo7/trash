@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Client {
 
     public static void main(String[] args){
-        Vehicle vehicle=new Hathi();
+        Vehicle vehicle=new Car();
         Passenger pass =new Passenger(vehicle);
 
         pass.startJourney();
